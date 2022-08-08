@@ -1,7 +1,7 @@
 from django.db import models
-from django_extensions.db.fields import AutoSlugField
+
 from django.contrib.auth.models import User
-from django_summernote.fields import SummernoteTextField
+
 from cloudinary.models import CloudinaryField
 
 STATUS = ((0, "Draft"), (1, "Published"))
@@ -49,13 +49,12 @@ class Comment(models.Model):
         return f"Comment {self.body} by {self.name}"
 
 
-
 class Recipe(models.Model):
     """
     Model for the Recipe
     """
     title = models.CharField(max_length=200, unique=True)
-    slug = AutoSlugField(populate_from='title', unique=True,)
+    slug = models.SlugField(max_length=200, unique=True)
     author = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="recipes")
     excerpt = models.TextField(blank=True,
