@@ -86,6 +86,10 @@ body {
     z-index: 100;
 }
 
+.recipetime {
+    text-align: center;
+}
+
 .post-link {
     text-decoration: none;
     color: #445261;
