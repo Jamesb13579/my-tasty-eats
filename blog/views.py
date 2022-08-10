@@ -11,11 +11,13 @@ from .forms import CommentForm, RecipeForm
 #     template_name = "index.html"
 #     paginate_by = 6
 
+
 class RecipeList(generic.ListView):
     model = Recipe()
     queryset = Recipe.objects.filter(status=1).order_by("-created_on")
     template_name = "index.html"
     paginate_by = 6
+
 
 class PostDetail(View):
 
@@ -38,9 +40,10 @@ class PostDetail(View):
             },
         )
 
+
 def create_recipe(request):
     """
-    renders share a recipe page
+    renders a recipe page
     """
     recipe_form = RecipeForm(request.POST or None, request.FILES or None)
     context = {
@@ -59,6 +62,7 @@ def create_recipe(request):
         recipe_form = RecipeForm()
     return render(request, "create_recipe.html", context)
 
+
 def delete_recipe(request, slug):
     """
     Recipe delete view
@@ -66,6 +70,7 @@ def delete_recipe(request, slug):
     recipe = Recipe.objects.get(slug=slug)
     recipe.delete()
     return redirect('home')   
+
 
 def edit_recipe(request, slug):
     """

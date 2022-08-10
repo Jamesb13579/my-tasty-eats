@@ -1,4 +1,5 @@
 {% extends 'base.html' %} 
+{% load active_link_tags %}
 {% load static %}
 {% block content %} 
 {% load crispy_forms_tags %}
@@ -65,6 +66,17 @@
             </div>
         </div>
     </div>
+
+    <div class="col mt-2 mb-3">
+        {% if user.id == recipe.author.id %}
+        <a href="{% url 'edit_recipe' recipe.slug %}" class="edit"><button class="btn btn-signup btn-md"
+                value="{{ recipe.slug }}" type="button">Edit</button></a>
+        <a href="{% url 'delete_recipe' recipe.slug %}" class="confirm-delete delete"><button class="btn btn-danger btn-md mx-4"
+                value="{{ recipe.slug }}" type="button">Delete</button></a>
+        {% endif %}
+    </div>
+
+
     <div class="row">
         <div class="col">
             <hr>

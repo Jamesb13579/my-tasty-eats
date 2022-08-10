@@ -9,6 +9,17 @@ body {
     color: #4A4A4F;
 }
 
+.box-width{
+    columns: 90;
+}
+
+.form-text {
+    color: black;
+    font-size: 3rem;
+    margin-top: 15px;
+    margin-bottom: 25px;
+  }
+
 .red-o {
     color: #E84610;
 }
