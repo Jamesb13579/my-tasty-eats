@@ -4,7 +4,7 @@ body {
 
 .brand {
     font-family: Lato, sans-serif;
-    font-size: 1.4rem;
+    font-size: 2rem;
     font-weight: 700;
     color: #4A4A4F;
 }
@@ -28,8 +28,21 @@ body {
     font-weight: 300;
 }
 
+.logo {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.float-right {
+    float: right;
+}
+
 .light-bg {
     background-color: #fff;
+}
+
+.bg-pink {
+    background-color: #f9bdbd;
 }
 
 .dark-bg {

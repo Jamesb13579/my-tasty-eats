@@ -1,7 +1,6 @@
 from django.db import models
-
+from django.utils.text import slugify
 from django.contrib.auth.models import User
-
 from cloudinary.models import CloudinaryField
 
 STATUS = (
@@ -84,17 +83,21 @@ class Recipe(models.Model):
         User, related_name='recipe_like', blank=True
     )
 
-    class Meta:
-        """
-        Order the recipes in descending order.
-        """
-        ordering = ['-created_on']
+    def save(self, *args, **kwargs):
+        self.slug = slugify(self.title)
+        super(Recipe, self).save(*args, **kwargs)
 
     def __str__(self):
         """
         Returns a string showing the title.
         """
         return str(self.title)
+
+    class Meta:
+        """
+        Order the recipes in descending order.
+        """
+        ordering = ['-created_on']    
 
     def number_of_likes(self):
         """
