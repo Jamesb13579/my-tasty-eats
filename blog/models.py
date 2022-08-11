@@ -81,7 +81,7 @@ class Recipe(models.Model):
     ingredients = models.TextField()
     method = models.TextField()
     likes = models.ManyToManyField(
-        User, related_name='user_recipe_likes', blank=True
+        User, related_name='recipe_like', blank=True
     )
 
     class Meta:
@@ -96,7 +96,7 @@ class Recipe(models.Model):
         """
         return str(self.title)
 
-    def amount_of_likes(self):
+    def number_of_likes(self):
         """
         See number of likes on a recipe.
         """
