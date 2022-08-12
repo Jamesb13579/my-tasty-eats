@@ -106,20 +106,21 @@ class Recipe(models.Model):
         See number of likes on a recipe.
         """
         return self.likes.count()
-
-
-    def can_edit(self, request, slug):
+ 
+    
+    def can_delete(self, request, slug):
         """
-        Allows author to edit recipe.
+        Allows author to delete recipe.
         """
         if self.author:
             return True
         else:
             return False
 
-    def can_delete(self, request, slug):
+
+    def can_edit(self, request, slug):
         """
-        Allows author to delete recipe.
+        Allows author to edit recipe.
         """
         if self.author:
             return True
@@ -140,3 +141,4 @@ class Comment(models.Model):
 
     def __str__(self):
         return f"Comment {self.body} by {self.name}"
+
