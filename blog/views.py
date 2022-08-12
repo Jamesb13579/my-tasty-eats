@@ -43,7 +43,7 @@ class PostDetail(View):
     def post(self, request, slug, *args, **kwargs):
 
         queryset = Recipe.objects.filter(status=1)
-        post = get_object_or_404(queryset, slug=slug)
+        recipe = get_object_or_404(queryset, slug=slug)
         comments = recipe.comments.filter(approved=True).order_by("-created_on")
         liked = False
         if recipe.likes.filter(id=self.request.user.id).exists():
@@ -63,7 +63,7 @@ class PostDetail(View):
             request,
             "post_detail.html",
             {
-                "post": post,
+                "recipe": recipe,
                 "comments": comments,
                 "commented": True,
                 "comment_form": comment_form,

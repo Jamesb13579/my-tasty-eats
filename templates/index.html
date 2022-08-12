@@ -17,7 +17,7 @@
                                 <img class="card-img-top"
                                     src="https://res.cloudinary.com/jamesbcloud/image/upload/v1660000183/cookie_2_uvzphn.jpg">
                                 {% else %}
-                                <img class="card-img-top" src=" {{ recipe.featured_image.url }}">
+                                <img class="card-img-top featured-image" src=" {{ recipe.featured_image.url }}">
                                 {% endif %}
                                 <div class="image-flash">
                                     <p class="author">Author: {{ recipe.author }}</p>

@@ -58,6 +58,11 @@ body {
     background-color: transparent;
 }
 
+.featured-image {
+    width: 30vw;
+    height: 25vw;
+}
+
 .image-container {
     position: relative;
 }

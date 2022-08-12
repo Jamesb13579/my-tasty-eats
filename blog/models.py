@@ -13,15 +13,15 @@ DIFFICULTY = (
     (2, "Hard")
     )
 TIME = (
-    (1, "5 Minutes"),
-    (2, "10 Minutes"),
-    (3, "15 Minutes"),
-    (4, "20 Minutes"),
-    (5, "25 Minutes"),
-    (6, "30 Minutes"),
-    (7, "40 Minutes"),
-    (8, "50 Minutes"),
-    (9, "60 Minutes"),
+    (5, "5 Minutes"),
+    (10, "10 Minutes"),
+    (15, "15 Minutes"),
+    (20, "20 Minutes"),
+    (25, "25 Minutes"),
+    (30, "30 Minutes"),
+    (40, "40 Minutes"),
+    (50, "50 Minutes"),
+    (60, "60 Minutes"),
     )
 SERVES = (
     (1, "1 Person"),
@@ -73,10 +73,10 @@ class Recipe(models.Model):
     status = models.IntegerField(choices=STATUS, default=1)
     created_on = models.DateTimeField(auto_now_add=True, blank=True, null=True)
     last_updated = models.DateTimeField(auto_now=True)
-    time_to_prepare = models.IntegerField(choices=TIME, default=1)
+    time_to_prepare = models.IntegerField(choices=TIME, default=5)
     difficulty = models.IntegerField(choices=DIFFICULTY, default=1)
     serves = models.IntegerField(choices=SERVES, default=1)
-    time_to_cook = models.IntegerField(choices=TIME, default=1)
+    time_to_cook = models.IntegerField(choices=TIME, default=5)
     ingredients = models.TextField()
     method = models.TextField()
     likes = models.ManyToManyField(
@@ -97,13 +97,15 @@ class Recipe(models.Model):
         """
         Order the recipes in descending order.
         """
-        ordering = ['-created_on']    
+        ordering = ['-created_on']
+    
 
     def number_of_likes(self):
         """
         See number of likes on a recipe.
         """
         return self.likes.count()
+
 
     def can_edit(self, request, slug):
         """
