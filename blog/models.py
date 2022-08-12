@@ -34,6 +34,7 @@ SERVES = (
     (8, "8 People"),
     )
 
+
 class Post(models.Model):
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
@@ -124,6 +125,7 @@ class Recipe(models.Model):
             return True
         else:
             return False
+
 
 class Comment(models.Model):
     recipe = models.ForeignKey(Recipe, on_delete=models.CASCADE, related_name="comments", null=True)
