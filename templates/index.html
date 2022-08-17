@@ -13,6 +13,7 @@
                     <div class="card mb-4">
                         <div class="card-body">
                             <div class="image-container">
+                                <a href="{% url 'post_detail' recipe.slug %}" class="post-link">
                                 {% if "placeholder" in recipe.featured_image.url %}
                                 <img class="card-img-top"
                                     src="https://res.cloudinary.com/jamesbcloud/image/upload/v1660000183/cookie_2_uvzphn.jpg">
@@ -22,6 +23,7 @@
                                 <div class="image-flash">
                                     <p class="author">Author: {{ recipe.author }}</p>
                                 </div>
+                                </a>
                             </div>
                             <a href="{% url 'post_detail' recipe.slug %}" class="post-link">
                                 <h2 class="card-title">{{ recipe.title }}</h2>

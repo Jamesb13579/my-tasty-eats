@@ -10,18 +10,6 @@
 {% endblock %}
 
 
-<!-- Navbar Active Link -->
-{% block active_create %}
-active
-{% endblock %}
-
-
-<!-- aria-current Attribute for active nav link -->
-{% block aria_create %}
-aria-current="page" id="active-green"
-{% endblock %}
-
-
 {% block content %}
 {% if user.is_authenticated %}
 <div class="container text-dark">

@@ -1,108 +1,251 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# **My Tasty Eats**
 
-Welcome Jamesb13579,
+## Overview
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+My Tasty Eats is a website that allows members to easily share recipes amoung each other. The users can create and login to an account. Fill out a recipe form and upload their recipe to the site. They also have the ability to delete or edit recipos amd like and comment on other peoples recipes.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+View the live project [Here]( https://my-tasty-eats.herokuapp.com/)
 
-## Gitpod Reminders
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+![Responsive Design Screenshot](README/assets/responsive-design-screenshot.png)
 
-`python3 -m http.server`
 
-A blue button should appear to click: _Make Public_,
+## User Experience (UX)
 
-Another blue button should appear to click: _Open Browser_.
+### User Stories
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+As a user I want to:
 
-A blue button should appear to click: _Make Public_,
+*	Easily understand the main purpose of the site, so that I can learn more about how to use the site.
+*	Easily navigate around the site, so that I can find content and understand where I am on the site.
+*	Be provided with a summary of all posts by most recent first so that I can glance through quickly to decide which post to read in full.
+*	Read other users’ posts in full detail and comments related to those posts so that I can decide to review and offer feedback to that user and not repeat other suggestions from comments by other users.
+*	Register my account, so that I can post my projects, update and delete them if I wish.
+*	Register my account, so that I can comment on other’s posts, update and delete my comments if I wish.
+*	Easily log in and log out of my account, so that I can access my personal information.
+*	View my profile so that I can update my information such as username, email and profile image.
+*	Find links easily so that I can contact the site owner if needed.
+*	Clearly see what user posted which projects and comments so that I can make a connection.
+*	See clearly what date a post or comment was created so that I can clearly see how relevant and up to date the information is.
+*	Clearly see how many comments are attached to a post before clicking in to read it fully so that I can decide to read and also comment depending on whether others have commented already.
+*	Post my projects to the site so that I can connect with others and receive feedback on my project.
+*	Update and delete my own project posts so that I can keep the information up to date or fix any mistakes I notice.
+*	Comment on my own project posts so that I can reply to other users’ comments
+*	Comment on other user’s projects so that I can connect with others by giving feedback
+*	Update or delete my comments so that I can keep the information up to date and relevant or fix any mistakes I notice.
+*	Access the site on various devices such as desktop, tablet or mobile to that I can use the site no matter what device I have to hand.
+*	Understand when an error occurs so that I am given clear feedback on what I should do.
+*	Be aware when my actions have had a successful outcome so that I know when I have updated or deleted a post or comments or if I am logged in or out successfully.
+*   As a site admin user, I can log in so that I can manage a supportive online peer code review community by viewing users, profiles, posts and comments, and updating and deleting accordingly.
 
-Another blue button should appear to click: _Open Browser_.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### Agile Approach in this Project
 
-To log into the Heroku toolbelt CLI:
+An Agile Approach was used to develop this site.  That is, each activity was broken down into small bite-sized portions and performed iteratively, so that as it was repeated, it was tweaked and improved on with each cycle.  According to a report from the [Standish Group (2018)](https://standishgroup.myshopify.com/), Agile projects are statistically twice more likely to succeed, and a third less likely to fail than waterfall projects.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+To complete the overall aim of the My Tasty Eats idea, 9 Epics were formed (documented under GitHub Issues) and these then were broken down into specific tasks called User Stories.  These User Stories are small, self-contained units of development work designed to accomplish a specific goal.  These User Stories then had acceptance criteria attached for each so that it was clear when the User Stories were achieved as each of these conditions were met.  The acceptance criteria where then further broken down into tasks.  These tasks were the list of actions required to implement the User Story. They described the technical work details and activities to be performed to complete each User Story properly.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+**Example:**
 
-------
+    **Epic - User Account**
 
-## Release History
+    User Story - Profile Page:
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+    As a User, I would like to be able to easily view my profile page so that I can update my account from there and display the information I would like others to see
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+    Acceptance Criteria 1
+    Given that I am a registered user who is logged in
+    When I click the Profile link in the navigate bar
+    Then I am taken to my profile page and can see my details displayed
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+    Acceptance Criteria 2
+    Given that I am a registered user who is logged in
+    When I navigate to my profile page and edit my details
+    Then I can click an update button and be alerted that my information was updated successfully.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+    Tasks:
+    *	create a profile app for users’ functionality
+    *	create signal to create a user profile when a new user signs up
+    *	link up views & templates & URLs and display link to profile page in nav after user is logged in
+    *	display logged in users name on the profile page
+    *	create a profile model to add profile picture, contact details such as email
+    *	create form to allow users to be able to edit the information displayed on their profile page
+    *	add update button for users to click to submit their changes
+    *	show success message when user profile update
+    *   manually test this works by setting up a test user
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+Story points estimated the effort required to complete a particular User Story in one iteration.  To create a Product Backlog GitHub Milestones was used to track progress on groups of issues relating to the User Stories.
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+Timeboxing defined the iteration where the User Stories were developed based on the assigned priority.  The MoSCoW Prioritization technique was used to assign priorities for Product Backlog Items to be completed in a particular time box.  GitHub Labels was used to categories the User Stories into Must Have, Should Have and Could Have. This clearly showed which User Stories were more important to implement first and in what order.  This kept the scope of the project in focus at all times and only implemented what was essential first.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+Information radiators in Agile show real-time, informative and straightforward work status.  This project used a Kaban board, which was set up in GitHub Projects ([here](https://github.com/ciaraosull/project-4-django/projects/1)) to help keep track of work to do, in progress and completed.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+Within the timeframe work stopped with 83% of the timebox User Story points total of all Must Have and some Should Have prioritised User Stories.  Only 1 Should Have and 3 Could Have were left uncompleted and are documented in the future features section below.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+## Features
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+**This website takes the users stories mentioned above into consideration to create a positive UX.  The users stories are discussed in more detail below with examples of how each is implemented.**
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+1. **Favicon and logo**
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+A customised favicon and logo image was created using a free service from [Free Logo Design](https://www.freelogodesign.org/manager/showcase/c3daf13184dd4a90bcb4d07fef3f31d5?product=free).
 
-------
 
-## FAQ about the uptime script
+2. **Header**
 
-**Why have you added this script?**
+On purpose, the Header is fixed at the top of the screen. Light pink was picked for the background and black for the typeface in order to contrast each other and make the text easier to read.
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+*   Logo
 
-**How will this affect me?**
+    * The Logo I created for the project is the dame as I used for the favicon. 
+    
+    * This logo is positioned in the top right of the navigation bar.
+    
+    * The logo is designed to have the same pink background colour as the rest of the header and opposite the logo to the left is the website's name.
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+*   Navigation Bar
+    * The navigation bar is likewise located in the header. For larger screens, this is typically found in the top left corner. The bar contains links to different parts of the website.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+    * When screen size drops below set amount the navigation bar changes to a toggle menu.
 
-**So….?**
+    * Depending on whether you are logged in or nuot changes what you can see or do with the links in the header.
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+        ![Header](README/assets/header-screenshot.png)
 
-**Can I opt out?**
+        ![Header Mobile](README/assets/header-mobile-screenshot.png)
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+3. **Landing Page**
 
-**Anything more?**
+    * The landing page brings the user straight to the six most recently uploaded recipes.
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+    * The background of the site is set to white to allow the Images to push forward better visually.
 
----
+    * The posts are paginated every six posts and are listed with the most recent ones at the top. To make it simple for the user to navigate, the pagination is made to display not only the page numbers but also the first, previous, next, and last page.
+ 
+        ![Landing Page](README/assets/about-us-screenshot.png)
 
-Happy coding!
+
+4. **Post Detail Page**
+
+Here the User can view the full recipe post, delete or edit the post if they are the post creator. the user can also add a comment to the post and like it either.
+
+![Post Detail View](README/assets/post-detail-screenshot.png)
+
+
+
+12. **Register, Sign In & Log Out**
+
+As described in the future features section of this README, it is hoped that this project will be expanded to provide support for third-party (social) authentication via services like Github or Gmail.  As Django does not support this automatically, allauth was installed and used to create the register, sign in and log out functionality, so the project will already have the foundations in place to expand on this functionality in the future.
+
+At present to register, the user is not required to provide an email address.  This was decided on because there is no use for it yet then the user should not be asked for it at this stage, so their private details are not being stored if they are not needed.  In time as the scope of the project expands, for example, sending email notifications or recovered password functionality, then this may become a requirement for the user to provide.
+
+![Register](README/assets/register-screenshot.png)
+
+![Sign In](README/assets/signin-screenshot.png)
+
+![Log Out](README/assets/logout-screentshot.png)
+
+As previously described, once a user is logged in the navigation bar will change to display the different features the user has access to.
+
+![Success Sign In](README/assets/success-signin-screenshot.png)
+
+![Success Log Out](README/assets/success-signout-screenshot.png)
+
+13. **Admin User**
+
+A superuser was created for this project to manage the administration section.  Admin users have more functionality than regular users and can allow them to create, read, update and delete information such as users, profiles, posts and comments.  
+
+Only approved admin users can access this section of the site and can do so by adding /admin to the URL home page and signing in.  It was decided at this time not to provide a link to this on the site but could be a future feature to allow easier navigation for any admin users. 
+
+![Admin Screenshot](README/assets/admin-screenshot.png)
+
+
+14. **Footer**
+    *   The Footer contains the Connect with Us section.  The background and font colours are kept consistant with the theme of the site.
+
+    *   The GitHub & LinkedIn icons from [Font Awesome](https://fontawesome.com/) open in a new tab and take the user to the respective sites to connect.
+
+    *   The Footer also contains a copyright and the authours name.
+        
+        ![Footer](README/assets/footer-screenshot.png)
+
+
+
+15. **Error Pages**
+
+Custom Error Pages were created to support the professionalism design and ensure appropriate link was added back to the main site to guide users who come across these messages.
+
+* 400 Bad Request - the server cannot process the request due to something that is perceived to be a user error (it may be incorrect or corrupt).
+* 403 Page Forbiden - the user does not have permission to access this resource
+* 404 Page Not Found - the user requested a page that is not available
+* 500 Server Error - internal server error where there is a general problem with the website's server and not the fault of the user
+
+
+### Features Left to Implement
+
+The scope of this project really can be expanded to great lenghts but within a short time frame the following could be easily implemented:
+
+*   An extra added feature of styling the navigation links when a user is on that page was added.  This was to allow for easy navigation and sign post the user.  However, the 2 section links in the navigation bar About Us & View Posts could not be styled in this was as they did not have a url_name.  It was decided to leave this feature as is for now as the styling is only indicating to the user that they are on a different page.  As the Aout Us and Post View are within the Home Page this seems clear.  However, to change this some solutions to add to add this feature in the future could be using JavaScript and add an event listener and when the section is clicked the active class is then added to it as shown here in [W3Schools](https://www.w3schools.com/howto/howto_js_active_element.asp).  Another optiion would be to use Bootstrap5 [Scrollspy](https://getbootstrap.com/docs/5.2/components/scrollspy/), which could add a nice effect with less code.
+
+*   As described above, using the allauth already installed and set up, support for third-party (social) authentication via services like Github or Gmail so that users can use passwords and accounts to log in to this site instead of creating new ones.  Email notifications and reset password functionality could also be implemented quite easily in a short timeframe.
+
+*   Profile page - to allow users to view each others profile pages and include more information such as user bio.  This could allow users to get more familiar with each other and build up a supportive report.
+
+*   Users history - to allow users to see all the posts they have written and comments on their own user profile page so they can navigate to each one easily without having to find on the site.  This would make it easier for users to update and delete their work.
+
+*   Resize Profile Image - Pillow was installed with the intention of wrintg a function to ensure that the images the users upload as their profile picture are reduced to a certain file size to avoid users uploading images that take up too much space and load faster.  This could be easily implemented next within a short timeframe.
+
+*   Reply to Comments - The comments model could be expanded to include a parent field and then a function to show the child of each of those fields as a reply to each individual comment.  The comment form could be copied and some Javascript used to hide the form and then show on click of a reply icon under each main comment.  This fuctionality would allow better flow to conversations between users.
+
+*   Search functionality - a search box could be included to allow users to search for project posts by language/ library/framework or topic such as website / game / api ect.  The Post model could be expanded to use this as a field topic users can enter the details of the language or framework they used and this then could also be displayed on the post list view or used to filter the views to make the topics shown more relevant to each user.
+
+*   Accessibility & Privacy - an accessibility page and privacy policy page would be important to implement in the next iteration, especially if the users data such as email is to be required and stored.  This is important for users to be able to understand how the site can be adapted for specific accessiblitiy issues and also inform the users of how their date is stored and kept.
+
+*   Report inappropriate comments / projects - this project opted not to allow the comments to be approved before showing due to it not being maintained very regulalry at present.  However, a way for the user to report inappropriate content would be important feture to impliment next, along with either users content having to be approved first and/or profanity checker installed.  This would ensure the community was kept safe and supportive.
+
+*   Likes - it was decided not to use the feature of like or dislike or upvote/downvote on posts to ensure a more supportive and less competitive space for users.  However, a views counter could be implimented to allow users to see how many people have viewed their post to give an indication of how many people might have tested or used it.
+
+
+## Design
+
+### Data Model
+
+[LucidCharts](www.lucidchart.com) was used to visualise the custom models for this project.  [AllAuth](https://django-allauth.readthedocs.io/en/latest/) was also used for the user authentication system.  This uses the built-in Django User Model.
+
+The Profile model allows users who sign up to have a profile automatically created for them and the user can then update and change their profile information if they wish.  One User has One Profile, so this is a One-to-One relationship with the User’s name acting as the Foreign Key to the User Model.
+
+As each User and their Profile can have many posts, this is represented using the One-to-Many relationship however each post can only have one author.  The author’s name acts as the Foreign Key to the User Model.
+
+Also, every post can have 0 or many Comments and the post acts as the Foreign Key to the Comments & Post Model.  As only one User can be the author of any one comment this is represented by the One-to-One relationship with the User Model and the author of the comment is acting as the Foreign Key for the Comments.
+
+![ERD Image](README/assets/entity-relationship-diagram.png)
+
+Throughout this project, I have opted to use Object-Oriented Programming and Django’s Class-Based Generic Editing Views are used for this.  These are an advanced set of built-in views which are used to implement Create, Retrieve, Update and Delete instances of a table in the database. 
+
+### Wireframes
+
+After the design of the models [Balsamic Wireframes](www.balsamiq.com) were created to visualise the content the user sees and to design a positive UX (as described in more detail in the Features section).  A mobile first approach was used to design the site specifically for mobile use and then the design was altered slightly for desktop view.  [Bootstrap 5](https://getbootstrap.com/docs/5.0/getting-started/introduction/) was used with some customised styling to create a unique feel to the site.  [Font Awesome](https://fontawesome.com/) Icons were used throughout the site for reading accessibilty also.
+
+![Mobile Home](README/assets/home-mobile-wireframe.png)
+
+![Desktop Home](README/assets/home-desktop-wireframe.png)
+
+![Mobile Post Detail View](README/assets/post-mobile-wireframe.png)
+
+![Desktop Post Detail View](README/assets/post-desktop-wireframe.png)
+
+
+### Fonts
+
+The fonts used were Alice and serif. Alice was chosen for its clear lettering and spacing for reading accessibility for the user. Fonts were imported from [Google Fonts](https://fonts.google.com/).
+
+### Colour Scheme
+
+The colour scheme was chosen by using [Coolors](https://coolors.co/). The following palette was chosen for using on the fonts throughout the site due to high contrast for user reading accessibility:
+
+![Colour Pallet](README/assets/colour-pallet.png)

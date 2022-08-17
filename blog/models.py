@@ -99,15 +99,15 @@ class Recipe(models.Model):
         Order the recipes in descending order.
         """
         ordering = ['-created_on']
-    
+
 
     def number_of_likes(self):
         """
         See number of likes on a recipe.
         """
         return self.likes.count()
- 
-    
+
+
     def can_delete(self, request, slug):
         """
         Allows author to delete recipe.
@@ -134,11 +134,10 @@ class Comment(models.Model):
     email = models.EmailField()
     body = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
-    approved = models.BooleanField(default=False)
+    approved = models.BooleanField(default=True)
 
     class Meta:
         ordering = ["created_on"]
 
     def __str__(self):
         return f"Comment {self.body} by {self.name}"
-

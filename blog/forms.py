@@ -1,5 +1,6 @@
 from .models import Comment, Recipe
 from django import forms
+from django_summernote.widgets import SummernoteWidget
 
 
 class CommentForm(forms.ModelForm):
@@ -17,6 +18,10 @@ class RecipeForm(forms.ModelForm):
     """
     class Meta:
         model = Recipe
+        widgets = {
+            'ingredients': SummernoteWidget(),
+            'method': SummernoteWidget(),
+        }
         fields = [
             'title',
             'excerpt',
@@ -30,6 +35,7 @@ class RecipeForm(forms.ModelForm):
         ]
 
         prepopulated_fields = {'slug': ('title',)}
+        
 
     def __init__(self, *args, **kwargs):
         super(RecipeForm, self).__init__(*args, **kwargs)

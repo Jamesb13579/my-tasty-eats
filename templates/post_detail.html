@@ -4,28 +4,30 @@
 {% block content %} 
 {% load crispy_forms_tags %}
 
-
+<br>
 <div class="masthead">
     <div class="container">
         <div class="row g-0">
-            <div class="col-md-6 masthead-text">
+            <div class="col-md-12 masthead-text">
                 <!-- Post title goes in these h1 tags -->
                 <h1 class="post-title">{{ recipe.title }}</h1>
                 <!-- Post author goes before the | the post's created date goes after -->
                 <p class="post-subtitle">{{ recipe.author }} | {{ recipe.created_on }}</p>
             </div>
-            <div class="d-none d-md-block col-md-6 masthead-image">
-                <!-- The featured image URL goes in the src attribute -->
-                {% if "placeholder" in recipe.featured_image.url %}
-                <img src="https://res.cloudinary.com/jamesbcloud/image/upload/v1660000183/cookie_2_uvzphn.jpg" width="100%">
-                {% else %}
-                <img src=" {{ recipe.featured_image.url }}" width="100%">
-                {% endif %}
-            </div>
         </div>
+        
     </div>
 </div>
-
+<br>
+<div class="col-md-4 offset-md-4 col-sm-6 offset-sm-3 col-10 offset-1 masthead-image">
+    <!-- The featured image URL goes in the src attribute -->
+    {% if "placeholder" in recipe.featured_image.url %}
+    <img src="https://res.cloudinary.com/jamesbcloud/image/upload/v1660000183/cookie_2_uvzphn.jpg" width="100%">
+    {% else %}
+    <img src=" {{ recipe.featured_image.url }}" width="100%">
+    {% endif %}
+</div>
+<br>
 <div class="container">
     <div class="row">
         <div class="col"><p class="recipetime">Time to prepare: {{ recipe.time_to_prepare | safe }} Minutes</p></div>
@@ -43,6 +45,7 @@
                 <p class="card-text ">
                     {{ recipe.ingredients | safe }}
                 </p>
+                <br>
                 <div class="row">
 
                     <div class="card-body">
@@ -65,15 +68,15 @@
                                 {% else %}
                                 <span class="text-secondary"><i class="far fa-heart"></i></span>
                                 {% endif %}
-                                <span class="text-secondary">{{ recipe.number_of_likes }} </span>
+                                <span class="text-secondary like-position">{{ recipe.number_of_likes }} </span>
+                                {% with comments.count as total_comments %}
+                                <span class="text-secondary"><i class="far fa-comments"></i><p>{{ total_comments }}</p></span>
+                                {% endwith %}
                             </strong>
+                                
                         </div>
                     <div class="col-1">
-                        {% with comments.count as total_comments %}
-                        <strong class="text-secondary"><i class="far fa-comments"></i>
-                            <!-- Our total_comments variable goes before the closing strong tag -->
-                            {{ total_comments }}</strong>
-                        {% endwith %}
+                        
                     </div>
                 </div>
             </div>
@@ -122,7 +125,7 @@
                 <!-- For later -->
                 {% if commented %}
                 <div class="alert alert-success" role="alert">
-                    Your comment is awaiting approval
+                    Your comment has been Posted
                 </div>
                 {% else %}
                 {% if user.is_authenticated %}
