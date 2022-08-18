@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% load static %}
+
+<!-- Custom Error 403 Page -->
+<section class="container d-flex justify-content-center mt-4">
+    <div class="form-style card text-center mb-3 mt-3 ps-5 pe-5 p-3 mb-5 back-color rounded" style="width: 800px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <h1>403</h1>
+                    <h2>Not this time, access forbidden!</h2>
+                    <a class="btn btn-color mb4 mt-4" href="{% url 'home'%}" aria-label="Go to Home Page">Home</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{%  endblock content  %}

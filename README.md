@@ -15,27 +15,22 @@ View the live project [Here]( https://my-tasty-eats.herokuapp.com/)
 ### User Stories
 
 As a user I want to:
-
-*	Easily understand the main purpose of the site, so that I can learn more about how to use the site.
-*	Easily navigate around the site, so that I can find content and understand where I am on the site.
-*	Be provided with a summary of all posts by most recent first so that I can glance through quickly to decide which post to read in full.
-*	Read other users’ posts in full detail and comments related to those posts so that I can decide to review and offer feedback to that user and not repeat other suggestions from comments by other users.
-*	Register my account, so that I can post my projects, update and delete them if I wish.
-*	Register my account, so that I can comment on other’s posts, update and delete my comments if I wish.
-*	Easily log in and log out of my account, so that I can access my personal information.
-*	View my profile so that I can update my information such as username, email and profile image.
-*	Find links easily so that I can contact the site owner if needed.
-*	Clearly see what user posted which projects and comments so that I can make a connection.
+*	Register my account easily and efficiantly, so that I can post my recipes whilst also having the ability to update and delete them if I wish.
+*	Register my account, so that I can interact with other users through the comment section on the site.
+*	Easily log in and log out of my account so that I can access my personal information.
+*	Find social media links easily so that I can contact the site owner if needed.
+*	Easily and comprehensively understand the main purposes and content of the site, so that I can then in turn gain more knowledge and understanding of how to efficiantly use the site.
+*	Navigate and explore different areas of the site in order to find content and be aware of the content contained within where I am on the site.
+*	Be provided with a summary of all posts organised by the most recent which would appear first so that I can easily navigate through the information contained within, and  then quickly decide which posts are relevent to my needs.
+*	Read other users’ posts in full detail and also any comments which are related to those posts so that I can then make an informed decision on whether to review and offer feedback to that user and not repeat other suggestions from previous comments.
+*	Clearly see what other recipes users have posted and also have the ability to interact and open a line of communication with other users.
 *	See clearly what date a post or comment was created so that I can clearly see how relevant and up to date the information is.
-*	Clearly see how many comments are attached to a post before clicking in to read it fully so that I can decide to read and also comment depending on whether others have commented already.
-*	Post my projects to the site so that I can connect with others and receive feedback on my project.
-*	Update and delete my own project posts so that I can keep the information up to date or fix any mistakes I notice.
-*	Comment on my own project posts so that I can reply to other users’ comments
-*	Comment on other user’s projects so that I can connect with others by giving feedback
-*	Update or delete my comments so that I can keep the information up to date and relevant or fix any mistakes I notice.
-*	Access the site on various devices such as desktop, tablet or mobile to that I can use the site no matter what device I have to hand.
+*	Clearly see how many comments are attached to a post before clicking in to the recipe in order to gain an insight into the views and opinions of others in relation to particular recipes.
+*	Post my recipes to the site so that I can connect with others and receive feedback on my work.
+*	Update and delete my own recipe posts so that I can keep the information up to date or fix any mistakes I may notice.
+*	Comment on my own recipe posts so that I can respond and interact with other users’ comments.
+*	Access the site on various devices such as desktop, tablet or mobile so that the site is universally accessible to the majority of users and have the ability to be accessed remotely.
 *	Understand when an error occurs so that I am given clear feedback on what I should do.
-*	Be aware when my actions have had a successful outcome so that I know when I have updated or deleted a post or comments or if I am logged in or out successfully.
 *   As a site admin user, I can log in so that I can manage a supportive online peer code review community by viewing users, profiles, posts and comments, and updating and deleting accordingly.
 
 
@@ -100,7 +95,7 @@ On purpose, the Header is fixed at the top of the screen. Light pink was picked 
 
 *   Logo
 
-    * The Logo I created for the project is the dame as I used for the favicon. 
+    * The Logo I created for the project is the same as that which I used for the favicon. 
     
     * This logo is positioned in the top right of the navigation bar.
     
@@ -108,7 +103,7 @@ On purpose, the Header is fixed at the top of the screen. Light pink was picked 
 
 
 *   Navigation Bar
-    * The navigation bar is likewise located in the header. For larger screens, this is typically found in the top left corner. The bar contains links to different parts of the website.
+    * The navigation bar is likewise located in the header. For larger screens, this is found in the top left corner. The bar contains links to different parts of the website.
 
     * When screen size drops below set amount the navigation bar changes to a toggle menu.
 
@@ -123,7 +118,7 @@ On purpose, the Header is fixed at the top of the screen. Light pink was picked 
 
     * The landing page brings the user straight to the six most recently uploaded recipes.
 
-    * The background of the site is set to white to allow the Images to push forward better visually.
+    * The background of the site is set to white to allow the Images to appear more pleasing to the eye of the user.
 
     * The posts are paginated every six posts and are listed with the most recent ones at the top. To make it simple for the user to navigate, the pagination is made to display not only the page numbers but also the first, previous, next, and last page.
  
@@ -242,10 +237,10 @@ After the design of the models [Balsamic Wireframes](www.balsamiq.com) were crea
 
 ### Fonts
 
-The fonts used were Alice and serif. Alice was chosen for its clear lettering and spacing for reading accessibility for the user. Fonts were imported from [Google Fonts](https://fonts.google.com/).
+The fonts used were Lato, Roboto and sans-serif. Fonts were imported from [Google Fonts](https://fonts.google.com/).
 
 ### Colour Scheme
 
-The colour scheme was chosen by using [Coolors](https://coolors.co/). The following palette was chosen for using on the fonts throughout the site due to high contrast for user reading accessibility:
+The colour scheme was chosen by using [olorate](https://colorate.azurewebsites.net/). The following palette was chosen for using on the fonts throughout the site due to high contrast for user reading accessibility:
 
 ![Colour Pallet](README/assets/colour-pallet.png)

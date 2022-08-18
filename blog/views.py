@@ -4,7 +4,6 @@ from django.http import HttpResponseRedirect
 from .models import Post, Recipe
 from .forms import CommentForm, RecipeForm
 
-
 class RecipeList(generic.ListView):
     model = Recipe()
     queryset = Recipe.objects.filter(status=1).order_by("-created_on")
@@ -127,3 +126,4 @@ class PostLike(View):
             recipe.likes.add(request.user)
 
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
+
