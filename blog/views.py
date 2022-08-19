@@ -4,6 +4,7 @@ from django.http import HttpResponseRedirect
 from .models import Post, Recipe
 from .forms import CommentForm, RecipeForm
 
+
 class RecipeList(generic.ListView):
     model = Recipe()
     queryset = Recipe.objects.filter(status=1).order_by("-created_on")
@@ -16,7 +17,8 @@ class PostDetail(View):
     def get(self, request, slug, *args, **kwargs):
         queryset = Recipe.objects.filter(status=1)
         recipe = get_object_or_404(queryset, slug=slug)
-        comments = recipe.comments.filter(approved=True).order_by("-created_on")
+        comments = recipe.comments.filter(
+            approved=True).order_by("-created_on")
         liked = False
         if recipe.likes.filter(id=self.request.user.id).exists():
             liked = True
@@ -31,12 +33,13 @@ class PostDetail(View):
                 "comment_form": CommentForm()
             },
         )
-    
+
     def post(self, request, slug, *args, **kwargs):
 
         queryset = Recipe.objects.filter(status=1)
         recipe = get_object_or_404(queryset, slug=slug)
-        comments = recipe.comments.filter(approved=True).order_by("-created_on")
+        comments = recipe.comments.filter(
+            approved=True).order_by("-created_on")
         liked = False
         if recipe.likes.filter(id=self.request.user.id).exists():
             liked = True
@@ -92,7 +95,7 @@ def delete_recipe(request, slug):
     """
     recipe = Recipe.objects.get(slug=slug)
     recipe.delete()
-    return redirect('home')   
+    return redirect('home')
 
 
 def edit_recipe(request, slug):
@@ -116,8 +119,9 @@ def edit_recipe(request, slug):
         recipe_form = RecipeForm(instance=recipe)
     return render(request, "edit_recipe.html", context)
 
+
 class PostLike(View):
-    
+
     def post(self, request, slug, *args, **kwargs):
         recipe = get_object_or_404(Recipe, slug=slug)
         if recipe.likes.filter(id=request.user.id).exists():
@@ -126,4 +130,3 @@ class PostLike(View):
             recipe.likes.add(request.user)
 
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
-
