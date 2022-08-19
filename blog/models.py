@@ -100,13 +100,11 @@ class Recipe(models.Model):
         """
         ordering = ['-created_on']
 
-
     def number_of_likes(self):
         """
         See number of likes on a recipe.
         """
         return self.likes.count()
-
 
     def can_delete(self, request, slug):
         """
@@ -116,7 +114,6 @@ class Recipe(models.Model):
             return True
         else:
             return False
-
 
     def can_edit(self, request, slug):
         """
@@ -129,7 +126,9 @@ class Recipe(models.Model):
 
 
 class Comment(models.Model):
-    recipe = models.ForeignKey(Recipe, on_delete=models.CASCADE, related_name="comments", null=True)
+    recipe = models.ForeignKey(
+        Recipe, on_delete=models.CASCADE, related_name="comments", null=True
+    )
     name = models.CharField(max_length=80)
     email = models.EmailField()
     body = models.TextField()

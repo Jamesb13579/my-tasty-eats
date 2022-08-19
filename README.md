@@ -133,25 +133,25 @@ Here the User can view the full recipe post, delete or edit the post if they are
 
 
 
-12. **Register, Sign In & Log Out**
+5. **Register, Sign In & Log Out**
 
 As described in the future features section of this README, it is hoped that this project will be expanded to provide support for third-party (social) authentication via services like Github or Gmail.  As Django does not support this automatically, allauth was installed and used to create the register, sign in and log out functionality, so the project will already have the foundations in place to expand on this functionality in the future.
 
 At present to register, the user is not required to provide an email address.  This was decided on because there is no use for it yet then the user should not be asked for it at this stage, so their private details are not being stored if they are not needed.  In time as the scope of the project expands, for example, sending email notifications or recovered password functionality, then this may become a requirement for the user to provide.
 
-![Register](README/assets/register-screenshot.png)
+![Register](static/site-pictures/readme/signup.png)
 
-![Sign In](README/assets/signin-screenshot.png)
+![Sign In](static/site-pictures/readme/signin2.png)
 
-![Log Out](README/assets/logout-screentshot.png)
+![Log Out](static/site-pictures/readme/signout2.png)
 
 As previously described, once a user is logged in the navigation bar will change to display the different features the user has access to.
 
-![Success Sign In](README/assets/success-signin-screenshot.png)
+![Success Sign In](static/site-pictures/readme/signin.png)
 
-![Success Log Out](README/assets/success-signout-screenshot.png)
+![Success Log Out](static/site-pictures/readme/signout.png)
 
-13. **Admin User**
+6. **Admin User**
 
 A superuser was created for this project to manage the administration section.  Admin users have more functionality than regular users and can allow them to create, read, update and delete information such as users, profiles, posts and comments.  
 
@@ -160,18 +160,18 @@ Only approved admin users can access this section of the site and can do so by a
 ![Admin Screenshot](README/assets/admin-screenshot.png)
 
 
-14. **Footer**
+7. **Footer**
     *   The Footer contains the Connect with Us section.  The background and font colours are kept consistant with the theme of the site.
 
-    *   The GitHub & LinkedIn icons from [Font Awesome](https://fontawesome.com/) open in a new tab and take the user to the respective sites to connect.
+    *   The Facebook, Instagram, Twitter and Youtube icons from [Font Awesome](https://fontawesome.com/) are shown in the bottom of the footer for example purposes but not linked to the respective sites.
 
-    *   The Footer also contains a copyright and the authours name.
+    *   The Footer also contains the authours name.
         
         ![Footer](README/assets/footer-screenshot.png)
 
 
 
-15. **Error Pages**
+8. **Error Pages**
 
 Custom Error Pages were created to support the professionalism design and ensure appropriate link was added back to the main site to guide users who come across these messages.
 
@@ -179,6 +179,14 @@ Custom Error Pages were created to support the professionalism design and ensure
 * 403 Page Forbiden - the user does not have permission to access this resource
 * 404 Page Not Found - the user requested a page that is not available
 * 500 Server Error - internal server error where there is a general problem with the website's server and not the fault of the user
+
+    ![400](static/site-pictures/readme/400.png)
+
+    ![403](static/site-pictures/readme/403.png)
+    
+    ![404](static/site-pictures/readme/404.png)
+    
+    ![500](static/site-pictures/readme/500.png)
 
 
 ### Features Left to Implement
@@ -224,15 +232,11 @@ Throughout this project, I have opted to use Object-Oriented Programming and Dja
 
 ### Wireframes
 
-After the design of the models [Balsamic Wireframes](www.balsamiq.com) were created to visualise the content the user sees and to design a positive UX (as described in more detail in the Features section).  A mobile first approach was used to design the site specifically for mobile use and then the design was altered slightly for desktop view.  [Bootstrap 5](https://getbootstrap.com/docs/5.0/getting-started/introduction/) was used with some customised styling to create a unique feel to the site.  [Font Awesome](https://fontawesome.com/) Icons were used throughout the site for reading accessibilty also.
+After designing the model, a [Balsamic Wireframes](www.balsamiq.com was created to visualize what the user would see and design a positive UX. Using a mobile-first approach, the site is designed for mobile use and then slightly redesigned for desktop viewing  [Bootstrap 5](https://getbootstrap.com/docs/5.0/getting-started/introduction/) was used with some customise CSS styling to create a personalised feel to the site.  [Font Awesome](https://fontawesome.com/) Icons were used throughout the site for social media links.
 
-![Mobile Home](README/assets/home-mobile-wireframe.png)
+![Desktop Home](static/site-pictures/readme/basewireframe.png)
 
-![Desktop Home](README/assets/home-desktop-wireframe.png)
-
-![Mobile Post Detail View](README/assets/post-mobile-wireframe.png)
-
-![Desktop Post Detail View](README/assets/post-desktop-wireframe.png)
+![Desktop Post Detail View](static/site-pictures/readme/postdetailwireframe.png)
 
 
 ### Fonts

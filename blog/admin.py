@@ -15,18 +15,6 @@ class PostRecipe(SummernoteModelAdmin):
     summernote_fields = ('ingredients, method',)
 
 
-# @admin.register(Post)
-# class PostAdmin(SummernoteModelAdmin):
-#     """
-#     admin class for Post model
-#     """
-#     list_display = ('title', 'slug', 'status', 'created_on')
-#     search_fields = ['title', 'content']
-#     list_filter = ('status', 'created_on')
-#     prepopulated_fields = {'slug': ('title',)}
-#     summernote_fields = ('content',)
-
-
 @admin.register(Comment)
 class CommentAdmin(admin.ModelAdmin):
     """

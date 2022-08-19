@@ -35,7 +35,6 @@ class RecipeForm(forms.ModelForm):
         ]
 
         prepopulated_fields = {'slug': ('title',)}
-        
 
     def __init__(self, *args, **kwargs):
         super(RecipeForm, self).__init__(*args, **kwargs)
