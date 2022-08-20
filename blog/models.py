@@ -36,6 +36,9 @@ SERVES = (
 
 
 class Post(models.Model):
+    """
+    model to create post unused
+    """
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
     author = models.ForeignKey(
@@ -51,6 +54,9 @@ class Post(models.Model):
         User, related_name='blogpost_like', blank=True)
 
     class Meta:
+        """
+        Meta
+        """
         ordering = ["-created_on"]
 
     def __str__(self):
@@ -126,6 +132,9 @@ class Recipe(models.Model):
 
 
 class Comment(models.Model):
+    """
+    create comment
+    """
     recipe = models.ForeignKey(
         Recipe, on_delete=models.CASCADE, related_name="comments", null=True
     )
