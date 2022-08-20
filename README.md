@@ -2,12 +2,11 @@
 
 ## Overview
 
-My Tasty Eats is a website that allows members to easily share recipes amoung each other. The users can create and login to an account. Fill out a recipe form and upload their recipe to the site. They also have the ability to delete or edit recipos amd like and comment on other peoples recipes.
+My Tasty Eats is a website that allows members to easily share recipes. The users can create and log in to an account. Fill out a recipe form and upload their recipe to the site. They also have the ability to delete or edit recipes and like and comment on other people's recipes.
 
 View the live project [Here]( https://my-tasty-eats.herokuapp.com/)
 
-
-![Responsive Design Screenshot](README/assets/responsive-design-screenshot.png)
+![Amiresponsive](static/site-pictures/readme/amiresponsive.png)
 
 
 ## User Experience (UX)
@@ -15,74 +14,32 @@ View the live project [Here]( https://my-tasty-eats.herokuapp.com/)
 ### User Stories
 
 As a user I want to:
-*	Register my account easily and efficiantly, so that I can post my recipes whilst also having the ability to update and delete them if I wish.
-*	Register my account, so that I can interact with other users through the comment section on the site.
-*	Easily log in and log out of my account so that I can access my personal information.
-*	Find social media links easily so that I can contact the site owner if needed.
-*	Easily and comprehensively understand the main purposes and content of the site, so that I can then in turn gain more knowledge and understanding of how to efficiantly use the site.
-*	Navigate and explore different areas of the site in order to find content and be aware of the content contained within where I am on the site.
-*	Be provided with a summary of all posts organised by the most recent which would appear first so that I can easily navigate through the information contained within, and  then quickly decide which posts are relevent to my needs.
-*	Read other users’ posts in full detail and also any comments which are related to those posts so that I can then make an informed decision on whether to review and offer feedback to that user and not repeat other suggestions from previous comments.
-*	Clearly see what other recipes users have posted and also have the ability to interact and open a line of communication with other users.
-*	See clearly what date a post or comment was created so that I can clearly see how relevant and up to date the information is.
-*	Clearly see how many comments are attached to a post before clicking in to the recipe in order to gain an insight into the views and opinions of others in relation to particular recipes.
-*	Post my recipes to the site so that I can connect with others and receive feedback on my work.
-*	Update and delete my own recipe posts so that I can keep the information up to date or fix any mistakes I may notice.
-*	Comment on my own recipe posts so that I can respond and interact with other users’ comments.
-*	Access the site on various devices such as desktop, tablet or mobile so that the site is universally accessible to the majority of users and have the ability to be accessed remotely.
-*	Understand when an error occurs so that I am given clear feedback on what I should do.
-*   As a site admin user, I can log in so that I can manage a supportive online peer code review community by viewing users, profiles, posts and comments, and updating and deleting accordingly.
+*   Register my account easily and efficiently, so that I can post my recipes whilst also having the ability to update and delete them if I wish.
+*   Register my account, so that I can interact with other users through the comment section on the site.
+*   Easily log in and log out of my account so that I can access my personal information.
+*   Find social media links easily so that I can contact the site owner if needed.
+*   Easily and comprehensively understand the main purposes and content of the site, so that I can then in turn gain more knowledge and understanding of how to efficiently use the site.
+*   Navigate and explore different areas of the site in order to find content and be aware of the content contained within where I am on the site.
+*   Be provided with a summary of all posts organised by the most recent which would appear first so that I can easily navigate through the information contained within, and then quickly decide which posts are relevant to my needs.
+*   Read other users’ posts in full detail and also any comments which are related to those posts so that I can then make an informed decision on whether to review and offer feedback to that user and not repeat other suggestions from previous comments.
+*   Clearly see what other recipes users have posted and also have the ability to interact and open a line of communication with other users.
+*   See clearly what date a post or comment was created so that I can clearly see how relevant and up-to-date the information is.
+*   Clearly see how many comments are attached to a post before clicking on the recipe in order to gain an insight into the views and opinions of others concerning particular recipes.
+*   Post my recipes to the site so that I can connect with others and receive feedback on my work.
+*   Update and delete my recipe posts so that I can keep the information up to date or fix any mistakes I may notice.
+*   Comment on my recipe posts so that I can respond and interact with other users’ comments.
+*   Access the site on various devices such as desktops, tablets, or mobile so that the site is universally accessible to the majority of users and has the ability to be accessed remotely.
+*   Understand when an error occurs so that I am given clear feedback on what I should do.
+*   As a site admin user, I can log in so that I can manage a supportive online peer code review community by viewing users, profiles, posts, and comments, and updating and deleting accordingly.
 
 
 ### Agile Approach in this Project
 
-An Agile Approach was used to develop this site.  That is, each activity was broken down into small bite-sized portions and performed iteratively, so that as it was repeated, it was tweaked and improved on with each cycle.  According to a report from the [Standish Group (2018)](https://standishgroup.myshopify.com/), Agile projects are statistically twice more likely to succeed, and a third less likely to fail than waterfall projects.
+This website was developed using an agile method. That is, each activity is broken down into bite-sized pieces and performed iteratively so that each cycle adjusts and improves upon it as work is completed.  According to a report from the [Standish Group (2018)](https://standishgroup.myshopify.com/), Agile projects are statistically twice more likely to succeed, and a third less likely to fail than waterfall projects.
 
-To complete the overall aim of the My Tasty Eats idea, 9 Epics were formed (documented under GitHub Issues) and these then were broken down into specific tasks called User Stories.  These User Stories are small, self-contained units of development work designed to accomplish a specific goal.  These User Stories then had acceptance criteria attached for each so that it was clear when the User Stories were achieved as each of these conditions were met.  The acceptance criteria where then further broken down into tasks.  These tasks were the list of actions required to implement the User Story. They described the technical work details and activities to be performed to complete each User Story properly.
-
-**Example:**
-
-    **Epic - User Account**
-
-    User Story - Profile Page:
-
-    As a User, I would like to be able to easily view my profile page so that I can update my account from there and display the information I would like others to see
-
-    Acceptance Criteria 1
-    Given that I am a registered user who is logged in
-    When I click the Profile link in the navigate bar
-    Then I am taken to my profile page and can see my details displayed
-
-    Acceptance Criteria 2
-    Given that I am a registered user who is logged in
-    When I navigate to my profile page and edit my details
-    Then I can click an update button and be alerted that my information was updated successfully.
-
-    Tasks:
-    *	create a profile app for users’ functionality
-    *	create signal to create a user profile when a new user signs up
-    *	link up views & templates & URLs and display link to profile page in nav after user is logged in
-    *	display logged in users name on the profile page
-    *	create a profile model to add profile picture, contact details such as email
-    *	create form to allow users to be able to edit the information displayed on their profile page
-    *	add update button for users to click to submit their changes
-    *	show success message when user profile update
-    *   manually test this works by setting up a test user
-
-
-Story points estimated the effort required to complete a particular User Story in one iteration.  To create a Product Backlog GitHub Milestones was used to track progress on groups of issues relating to the User Stories.
-
-Timeboxing defined the iteration where the User Stories were developed based on the assigned priority.  The MoSCoW Prioritization technique was used to assign priorities for Product Backlog Items to be completed in a particular time box.  GitHub Labels was used to categories the User Stories into Must Have, Should Have and Could Have. This clearly showed which User Stories were more important to implement first and in what order.  This kept the scope of the project in focus at all times and only implemented what was essential first.
-
-Information radiators in Agile show real-time, informative and straightforward work status.  This project used a Kaban board, which was set up in GitHub Projects ([here](https://github.com/ciaraosull/project-4-django/projects/1)) to help keep track of work to do, in progress and completed.
-
-Within the timeframe work stopped with 83% of the timebox User Story points total of all Must Have and some Should Have prioritised User Stories.  Only 1 Should Have and 3 Could Have were left uncompleted and are documented in the future features section below.
-
+This project used a Kaban board, which was set up in GitHub Projects ([here](https://github.com/users/Jamesb13579/projects/1/views/1)) to help keep track of work to do, in progress, and completed.
 
 ## Features
-
-**This website takes the users stories mentioned above into consideration to create a positive UX.  The users stories are discussed in more detail below with examples of how each is implemented.**
-
 
 1. **Favicon and logo**
 
@@ -105,13 +62,13 @@ On purpose, the Header is fixed at the top of the screen. Light pink was picked 
 *   Navigation Bar
     * The navigation bar is likewise located in the header. For larger screens, this is found in the top left corner. The bar contains links to different parts of the website.
 
-    * When screen size drops below set amount the navigation bar changes to a toggle menu.
+    * When screen size drops below the set amount the navigation bar changes to a toggle menu.
 
-    * Depending on whether you are logged in or nuot changes what you can see or do with the links in the header.
+    * Depending on whether you are logged in or not change what you can see or do with the links in the header.
 
-        ![Header](README/assets/header-screenshot.png)
+        ![Header](static/site-pictures/readme/header1.png)
 
-        ![Header Mobile](README/assets/header-mobile-screenshot.png)
+        ![Header Mobile](static/site-pictures/readme/header2.png)
 
 
 3. **Landing Page**
@@ -122,22 +79,22 @@ On purpose, the Header is fixed at the top of the screen. Light pink was picked 
 
     * The posts are paginated every six posts and are listed with the most recent ones at the top. To make it simple for the user to navigate, the pagination is made to display not only the page numbers but also the first, previous, next, and last page.
  
-        ![Landing Page](README/assets/about-us-screenshot.png)
+        ![Landing Page](static/site-pictures/readme/index.png)
 
 
 4. **Post Detail Page**
 
-Here the User can view the full recipe post, delete or edit the post if they are the post creator. the user can also add a comment to the post and like it either.
+Here the User can view the full recipe post, and delete or edit the post if they are the post creator. the user can also add a comment to the post and like it either.
 
-![Post Detail View](README/assets/post-detail-screenshot.png)
+![Post Detail View](static/site-pictures/readme/postdetail1.png)
+![Post Detail View 2](static/site-pictures/readme/postdetail2.png)
+![Post Detail View 3](static/site-pictures/readme/postdetail3.png)
 
 
 
 5. **Register, Sign In & Log Out**
 
-As described in the future features section of this README, it is hoped that this project will be expanded to provide support for third-party (social) authentication via services like Github or Gmail.  As Django does not support this automatically, allauth was installed and used to create the register, sign in and log out functionality, so the project will already have the foundations in place to expand on this functionality in the future.
-
-At present to register, the user is not required to provide an email address.  This was decided on because there is no use for it yet then the user should not be asked for it at this stage, so their private details are not being stored if they are not needed.  In time as the scope of the project expands, for example, sending email notifications or recovered password functionality, then this may become a requirement for the user to provide.
+Currently, users can register for the site and log in without an email address or verification. I would hope in future versions of this site these would be included allowing users to use two-factor login and be able to receive an email verification. Currently, there is also not a built-in method to recover passwords this is also something that in the future I would like to correct. The login, Signup, and Register templates are basic Allauth templates with some small changes to suit my website better.
 
 ![Register](static/site-pictures/readme/signup.png)
 
@@ -153,30 +110,30 @@ As previously described, once a user is logged in the navigation bar will change
 
 6. **Admin User**
 
-A superuser was created for this project to manage the administration section.  Admin users have more functionality than regular users and can allow them to create, read, update and delete information such as users, profiles, posts and comments.  
+A superuser was created for this project to manage the admin area. Admin users have more features than regular users, allowing them full CRUD functionality involving information such as users, profiles, posts, and comments.
 
-Only approved admin users can access this section of the site and can do so by adding /admin to the URL home page and signing in.  It was decided at this time not to provide a link to this on the site but could be a future feature to allow easier navigation for any admin users. 
+Only approved admin users can access this area of ​​the site by adding /admin to the URL home page and logging in. At this time it was decided not to provide a link to it on the site, but this may be a future feature to make navigation easier for all admin users.
 
-![Admin Screenshot](README/assets/admin-screenshot.png)
+![Admin Screenshot](static/site-pictures/readme/admin.png)
 
 
 7. **Footer**
-    *   The Footer contains the Connect with Us section.  The background and font colours are kept consistant with the theme of the site.
+    *   The Footer contains the Connect with Us section.  The background and font colours are kept consistent with the theme of the site.
 
-    *   The Facebook, Instagram, Twitter and Youtube icons from [Font Awesome](https://fontawesome.com/) are shown in the bottom of the footer for example purposes but not linked to the respective sites.
+    *   The Facebook, Instagram, Twitter, and Youtube icons from [Font Awesome](https://fontawesome.com/) are shown at the bottom of the footer for example purposes but not linked to the respective sites.
 
-    *   The Footer also contains the authours name.
+    *   The Footer also contains the author's name.
         
-        ![Footer](README/assets/footer-screenshot.png)
+        ![Footer](static/site-pictures/readme/footer1.png)
 
 
 
 8. **Error Pages**
 
-Custom Error Pages were created to support the professionalism design and ensure appropriate link was added back to the main site to guide users who come across these messages.
+Custom Error Pages were created to allow users to be able to navigate more easily back to the home page rather than having to just use the back button. This was seen as a more professional approach and allows any users who encounter one of these pages to see a fully realised site.
 
 * 400 Bad Request - the server cannot process the request due to something that is perceived to be a user error (it may be incorrect or corrupt).
-* 403 Page Forbiden - the user does not have permission to access this resource
+* 403 Page Forbidden - the user does not have permission to access this resource
 * 404 Page Not Found - the user requested a page that is not available
 * 500 Server Error - internal server error where there is a general problem with the website's server and not the fault of the user
 
@@ -191,44 +148,28 @@ Custom Error Pages were created to support the professionalism design and ensure
 
 ### Features Left to Implement
 
-The scope of this project really can be expanded to great lenghts but within a short time frame the following could be easily implemented:
+The size of this project within the length of time assigned to complete it meant that certain features that would have liked to have been included have been left for later versions of the site:
 
-*   An extra added feature of styling the navigation links when a user is on that page was added.  This was to allow for easy navigation and sign post the user.  However, the 2 section links in the navigation bar About Us & View Posts could not be styled in this was as they did not have a url_name.  It was decided to leave this feature as is for now as the styling is only indicating to the user that they are on a different page.  As the Aout Us and Post View are within the Home Page this seems clear.  However, to change this some solutions to add to add this feature in the future could be using JavaScript and add an event listener and when the section is clicked the active class is then added to it as shown here in [W3Schools](https://www.w3schools.com/howto/howto_js_active_element.asp).  Another optiion would be to use Bootstrap5 [Scrollspy](https://getbootstrap.com/docs/5.2/components/scrollspy/), which could add a nice effect with less code.
+*   As previously mentioned, utilising the already installed and configured allauth, support for third-party (social) authentication using services like Facebook, Twitter, or other Social Media so that users may log in to this site using their existing passwords and accounts rather than having to create new ones. Implementing email notifications and the ability to reset passwords would be simple and quick.
 
-*   As described above, using the allauth already installed and set up, support for third-party (social) authentication via services like Github or Gmail so that users can use passwords and accounts to log in to this site instead of creating new ones.  Email notifications and reset password functionality could also be implemented quite easily in a short timeframe.
+* Having the ability to connect your account to Social media would also allow the users to more easily share recipes with their friends and followers
 
-*   Profile page - to allow users to view each others profile pages and include more information such as user bio.  This could allow users to get more familiar with each other and build up a supportive report.
+*   Navigation links change colour when you hover over them, but they do not show which is the active link as certain views didn't have a URL name to style. This would have meant there would need to be a custom javascript solution with event listeners which unfortunately there wasn't time to complete.
 
-*   Users history - to allow users to see all the posts they have written and comments on their own user profile page so they can navigate to each one easily without having to find on the site.  This would make it easier for users to update and delete their work.
+*   A User profile page would have been good allowing users to more easily view recipes posted by that user likes, and comments and give the user a way to view their history with the site.
 
-*   Resize Profile Image - Pillow was installed with the intention of wrintg a function to ensure that the images the users upload as their profile picture are reduced to a certain file size to avoid users uploading images that take up too much space and load faster.  This could be easily implemented next within a short timeframe.
+*   More functionality around comments would have been useful to include like the ability to link comments to more easily follow conversations between users, and also to add certain CRUD features to the user allowing them to edit old comments and delete them as well. I would also like to include the ability to report inappropriate comments for admin approval.
 
-*   Reply to Comments - The comments model could be expanded to include a parent field and then a function to show the child of each of those fields as a reply to each individual comment.  The comment form could be copied and some Javascript used to hide the form and then show on click of a reply icon under each main comment.  This fuctionality would allow better flow to conversations between users.
-
-*   Search functionality - a search box could be included to allow users to search for project posts by language/ library/framework or topic such as website / game / api ect.  The Post model could be expanded to use this as a field topic users can enter the details of the language or framework they used and this then could also be displayed on the post list view or used to filter the views to make the topics shown more relevant to each user.
-
-*   Accessibility & Privacy - an accessibility page and privacy policy page would be important to implement in the next iteration, especially if the users data such as email is to be required and stored.  This is important for users to be able to understand how the site can be adapted for specific accessiblitiy issues and also inform the users of how their date is stored and kept.
-
-*   Report inappropriate comments / projects - this project opted not to allow the comments to be approved before showing due to it not being maintained very regulalry at present.  However, a way for the user to report inappropriate content would be important feture to impliment next, along with either users content having to be approved first and/or profanity checker installed.  This would ensure the community was kept safe and supportive.
-
-*   Likes - it was decided not to use the feature of like or dislike or upvote/downvote on posts to ensure a more supportive and less competitive space for users.  However, a views counter could be implimented to allow users to see how many people have viewed their post to give an indication of how many people might have tested or used it.
+*   Posts are on the site currently sorted newest to oldest, I would like to give the user a way to change how posts are sorted. I would also like to give them the ability to search through old posts to find certain recipes by either name or by who the author of the recipe was.
 
 
 ## Design
 
 ### Data Model
 
-[LucidCharts](www.lucidchart.com) was used to visualise the custom models for this project.  [AllAuth](https://django-allauth.readthedocs.io/en/latest/) was also used for the user authentication system.  This uses the built-in Django User Model.
+I created custom data models so I would have a better view of how things would come together when the site was built. 
 
-The Profile model allows users who sign up to have a profile automatically created for them and the user can then update and change their profile information if they wish.  One User has One Profile, so this is a One-to-One relationship with the User’s name acting as the Foreign Key to the User Model.
-
-As each User and their Profile can have many posts, this is represented using the One-to-Many relationship however each post can only have one author.  The author’s name acts as the Foreign Key to the User Model.
-
-Also, every post can have 0 or many Comments and the post acts as the Foreign Key to the Comments & Post Model.  As only one User can be the author of any one comment this is represented by the One-to-One relationship with the User Model and the author of the comment is acting as the Foreign Key for the Comments.
-
-![ERD Image](README/assets/entity-relationship-diagram.png)
-
-Throughout this project, I have opted to use Object-Oriented Programming and Django’s Class-Based Generic Editing Views are used for this.  These are an advanced set of built-in views which are used to implement Create, Retrieve, Update and Delete instances of a table in the database. 
+I chose to employ object-oriented programming for my project, and I did it by using Django's Class-Based Generic Editing Views. These sophisticated built-in views are used to implement the Create, Retrieve, Update, and Delete operations on database tables. 
 
 ### Wireframes
 
@@ -245,6 +186,160 @@ The fonts used were Lato, Roboto and sans-serif. Fonts were imported from [Googl
 
 ### Colour Scheme
 
-The colour scheme was chosen by using [olorate](https://colorate.azurewebsites.net/). The following palette was chosen for using on the fonts throughout the site due to high contrast for user reading accessibility:
+The colour scheme was chosen by using [olorate](https://colorate.azurewebsites.net/). The following palette was chosen for use on the fonts throughout the site due to high contrast for user reading accessibility:
 
-![Colour Pallet](README/assets/colour-pallet.png)
+![Colour Pallet](static/site-pictures/readme/colourpallete.png)
+
+## Testing
+
+During development errors or warnings were fixed as they appeared such as indentation errors, lines too long, or extra space issues.  This helped keep the code clean and readable so other errors or bugs that arose were identified more easily. 
+
+After deployment, all features were tested for responsive design on a laptop and mobile (Samsung phone and tablet). I sent the site to a couple of people who tested to see if they could find any issues and anything found was reported to me and sorted. . The website was checked on Chrome, Firefox.
+
+Throughout the development process, page elements were inspected using Google Chrome's built-in Developer Tool, which also assisted in troubleshooting difficulties with the HTML and CSS codes.
+
+The README.md was proofread and passed through Grammarly and all links were checked before final submission.
+
+### Validator Testing
+
+*   All HTML pages were run through the [W3C HTML](https://validator.w3.org/) Validator showed some errors due to Django variables and tags but all HTML passed.
+
+![HTML Checker](README/assets/html-validator-screenshot.png)
+
+*   CSS stylesheet was run through the [W3C CSS](https://jigsaw.w3.org/css-validator/) Validator and showed no errors.
+
+![CSS Checker](README/assets/css-validator-screenshot.png)
+
+*   Python files such as views.py, models.py, etc. were run through the [Pep8](http://pep8online.com/) validator, and no errors were found.
+
+![PEP8 Checker](README/assets/pep8-validator-screenshot.png)
+
+### Bugs & Issues
+
+On one of my final look through of the project, the toggle menu wasn't showing, I had accidentally the class type styling this and hadn't realised
+
+Another issue I found was Crispy fields not working correctly for me due to a minor spelling error.
+
+## Security
+
+All SECRET access keys are stored safely in the env.py file to prevent unwanted connections to the database and this was set up before the first push to Github.
+
+Django’s setting DEBUG was set to False after development for deployment to prevent access to error screens revealing code or database entries.
+
+Django allauth was used to set up user registration and Django’s LoginRequiredMixin and UserPassesTestMixin were used to ensure only signed-in users and authors can edit/delete their posts or comments etc.
+
+Cross-Site Request Forgery (CSRF) tokens were used on all forms throughout this site to prevent valid requests to the backend server from being created for malicious purposes.
+
+
+## Technologies Used
+
+*   Frameworks and libraries:
+    *   Django: python framework used to create all the backend logic
+    *   Bootstrap5: CSS Framework for developing responsiveness and mobile-first
+    *   Django-allauth: authentication library used to create the user accounts
+
+*   Languages:
+    *   Python: used to develop the server-side
+    *   HTML: the markup language used to create the web pages
+    *   CSS: the styling language used to add custom styling
+
+*   Databases:
+    *   SQLite: used as the database during development
+    *   PostgreSQL: the database used to store all the data on deployment
+
+*   Other tools:
+    *   Github Projects: used to track the progress of the project
+    *   Git: the version control system
+    *   Balsamiq Wireframes: used to create the wireframes for design
+    *   Chrome DevTools: used to debug the website
+    *   Crispy Forms: used to manage Django Forms
+    *   Cloudinary: the image hosting service used to upload images
+    *   Font Awesome: used to create the icons
+    *   GitHub: used to host the source code
+    *   GitPod: the IDE used
+    *   Heroku: the hosting service
+    *   Pip3: the package manager used to install the dependencies
+    *   Psycopg2: the database driver used to connect to the database
+    *   Summernote: A WYSIWYG editor to allow users to edit their posts
+
+## Deployment
+
+The site was deployed via Heroku.
+1.  Log in to Heroku or create an account if required.
+2.  Then, click the button labelled New from the dashboard in the top right corner, and from the drop-down menu select Create New App.  You must enter a unique app name
+3.  Next, select your region.
+4.  Click on the Create App button.
+5.  In your app go to the Resources tab and add a Heroku Postgres database.
+6.  The next page you will see is the project’s Deploy Tab. Click on the Settings Tab and scroll down to Config Vars and enter:
+    *   CLOUDINARY_URL = your cloudinary key 
+    *   DATABASE_URL = the URL of your Heroku Postgres database
+    *   SECRET_KEY = a secret key for your app.
+    *   PORT = 8000
+    *   DISABLE_COLLECTSTATIC = 1 during development and remove when deploying to production
+
+7.  Scroll to the top of the page and now choose the Deploy tab.
+8.  Select Github as the deployment method.
+9.  Confirm you want to connect to GitHub.
+10. Search for the repository name and click the connect button.
+11. Scroll to the bottom of the deploy page and select the preferred deployment type:
+12. Click either Enable Automatic Deploys for automatic deployment when you push updates to Github.
+13. Select the correct branch for deployment from the drop-down menu and click Deploy Branch for manual deployment.
+
+NB: Ensure in Django settings, that DEBUG is False, create a Procfile and save the database and cloudinary URLs and secret key to env.py.
+
+### Version Control
+
+The version control system in use was Git. The source code was added, saved, staged, and pushed to the GitHub repository using the commands git add, git status, git commit, and git push.
+
+### Cloning
+
+To clone this repository from GitHub to a local computer use the following steps:
+
+1.  On GitHub, navigate to the main page of the repository.
+
+2.  Above the list of files, click Code.
+
+3.  Click Use GitHub CLI, then the copy icon.
+
+4.  Open Git Bash and change the current working directory to the location where you want the cloned directory.
+
+5.  Type git clone, and then paste the URL that was copied from step 3 above.
+
+6. Press Enter to create the local clone.
+
+### Forking
+A fork is a copy of a repository. Forking a repository allows you to freely experiment with changes without affecting the original project.
+
+To fork, this project goes to the top left of the repository, where you see the Fork Icon, and click Fork.  This will create a copy of the repository for you.
+
+## Credits
+### Content
+
+*   [Bootstrap 5 Classes Cheatsheet](https://www.studytonight.com/bootstrap/how-to-align-bootstrap-5-navbar-items-to-the-right)
+
+*   [Bootstrap 5 Move Nav Links Right](https://www.studytonight.com/bootstrap/how-to-align-bootstrap-5-navbar-items-to-the-right)
+
+*   [Django Docs](https://docs.djangoproject.com/en/4.0/)
+
+*   [Django Allauth](https://django-allauth.readthedocs.io/en/latest/)
+
+*   [GeeksforGeeks](https://www.geeksforgeeks.org/createview-class-based-views-django/) class based views
+
+*   [Django Slug Tutorial](https://learndjango.com/tutorials/django-slug-tutorial)
+
+*   [Cloudinary Field in Django](https://www.section.io/engineering-education/uploading-images-to-cloudinary-from-django-application/)
+
+*   [Summernote in Django](https://djangocentral.com/integrating-summernote-in-django/)
+
+
+### Media
+
+*   [Freelogodesign](https://www.freelogodesign.org/) used this to create a custom logo
+
+### Thanks
+
+I would like to thank the Code Institute program as it gave me the basis to be able to build this:
+
+* I used the I Think Therefore I Blog, as a basic model for my app then built from there
+
+* I learnt to build my custom error pages from a youtube video by Cryce Truly.
