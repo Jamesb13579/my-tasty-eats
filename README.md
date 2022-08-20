@@ -202,6 +202,54 @@ Throughout the development process, page elements were inspected using Google Ch
 
 The README.md was proofread and passed through Grammarly and all links were checked before final submission.
 
+## Manual Testing
+
+### Common Elements Testing
+Manual testing was conducted on the following elements that appear on every page:
+
+* Test that Logo redirects to home screen.
+
+* Test that Nav Links work.
+
+### Home Page
+Manual testing was conducted on the following elements of the [Home Page](https://my-tasty-eats.herokuapp.com/):
+     
+* Test that user welcome message displays username.
+
+    * On logging in, there is a message alert at the top of the page which tells the user that they have successfully logged in.
+    
+* Test that recipe cards redirect user to recipe pages.
+
+    * Test that clicking on recipe text and images bring the user to recipe page.
+
+### Recipe Page/Edit Recipe Page
+Manual testing was conducted on the following elements of the [Recipe Page](https://my-tasty-eats.herokuapp.com/lamb-chops-with-rosemary-and-garlic/) and [Edit Recipe Page](https://my-tasty-eats.herokuapp.com/edit-recipe/lamb-chops-with-rosemary-and-garlic):
+
+* Test that recipes can be edited by author only.
+
+* Test that recipes can only be deleted by author.
+     
+* Test that recipes can be liked and unliked when logged in.
+     
+* Test that comments can be submitted and approved.
+
+### Create Recipe Page
+Manual testing was conducted on the following elements of the [Add Recipe Page](https://my-tasty-eats.herokuapp.com/add-recipe/):
+
+* Test that recipes with the same title will throw an error and ask the user to rename the recipe to something unique.
+
+* Test that recipes create unique slugs, based on the title of the recipe.
+
+* Test that recipes are saved.
+     
+### Sign in/Sign Out/Sign Up Pages
+Manual testing was conducted on the following elements of the [Sign In Page](https://my-tasty-eats.herokuapp.com/accounts/login/), [Sign Out Page](https://my-tasty-eats.herokuapp.com/accounts/logout/) and [Sign Up Page](https://my-tasty-eats.herokuapp.com/accounts/signup/:
+
+* Users can register, log in and logout.
+
+### Pages are Responsive
+* Manual testing was conducted for responsiveness on large, medium and small screens.
+
 ### Validator Testing
 
 *   All HTML pages were run through the [W3C HTML](https://validator.w3.org/) Validator showed some errors due to Django variables and tags but all HTML passed.

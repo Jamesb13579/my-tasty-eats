@@ -6,6 +6,9 @@ from .forms import CommentForm, RecipeForm
 
 
 class RecipeList(generic.ListView):
+    """
+    paginate by 6
+    """
     model = Recipe()
     queryset = Recipe.objects.filter(status=1).order_by("-created_on")
     template_name = "index.html"
@@ -13,7 +16,9 @@ class RecipeList(generic.ListView):
 
 
 class PostDetail(View):
-
+    """
+    Render post detail
+    """
     def get(self, request, slug, *args, **kwargs):
         queryset = Recipe.objects.filter(status=1)
         recipe = get_object_or_404(queryset, slug=slug)
@@ -35,7 +40,9 @@ class PostDetail(View):
         )
 
     def post(self, request, slug, *args, **kwargs):
-
+        """
+        post comments
+        """
         queryset = Recipe.objects.filter(status=1)
         recipe = get_object_or_404(queryset, slug=slug)
         comments = recipe.comments.filter(
@@ -121,6 +128,9 @@ def edit_recipe(request, slug):
 
 
 class PostLike(View):
+    """
+    adds likes
+    """
 
     def post(self, request, slug, *args, **kwargs):
         recipe = get_object_or_404(Recipe, slug=slug)

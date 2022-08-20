@@ -172,7 +172,7 @@ body {
 }
 
 .like-position {
-    position: absolute;
+    position: inherit;
 }
 
 .footer-text {
