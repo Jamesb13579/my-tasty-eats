@@ -204,15 +204,15 @@ The README.md was proofread and passed through Grammarly and all links were chec
 
 *   All HTML pages were run through the [W3C HTML](https://validator.w3.org/) Validator showed some errors due to Django variables and tags but all HTML passed.
 
-![HTML Checker](README/assets/html-validator-screenshot.png)
+![HTML Checker](static/site-pictures/readme/html.png)
 
 *   CSS stylesheet was run through the [W3C CSS](https://jigsaw.w3.org/css-validator/) Validator and showed no errors.
 
-![CSS Checker](README/assets/css-validator-screenshot.png)
+![CSS Checker](static/site-pictures/readme/cssval1.png)
 
 *   Python files such as views.py, models.py, etc. were run through the [Pep8](http://pep8online.com/) validator, and no errors were found.
 
-![PEP8 Checker](README/assets/pep8-validator-screenshot.png)
+![PEP8 Checker](static/site-pictures/readme/pep8.png)
 
 ### Bugs & Issues
 
