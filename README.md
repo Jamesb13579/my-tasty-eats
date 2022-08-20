@@ -48,7 +48,7 @@ A customised favicon and logo image was created using a free service from [Free 
 
 2. **Header**
 
-On purpose, the Header is fixed at the top of the screen. Light pink was picked for the background and black for the typeface in order to contrast each other and make the text easier to read.
+The Header is placed at the top of the screen, featuring a light pink was picked for the background and black for the typeface in order to contrast each other and make the text easier to read.
 
 *   Logo
 
@@ -87,7 +87,9 @@ On purpose, the Header is fixed at the top of the screen. Light pink was picked 
 Here the User can view the full recipe post, and delete or edit the post if they are the post creator. the user can also add a comment to the post and like it either.
 
 ![Post Detail View](static/site-pictures/readme/postdetail1.png)
+
 ![Post Detail View 2](static/site-pictures/readme/postdetail2.png)
+
 ![Post Detail View 3](static/site-pictures/readme/postdetail3.png)
 
 
@@ -152,7 +154,7 @@ The size of this project within the length of time assigned to complete it meant
 
 *   As previously mentioned, utilising the already installed and configured allauth, support for third-party (social) authentication using services like Facebook, Twitter, or other Social Media so that users may log in to this site using their existing passwords and accounts rather than having to create new ones. Implementing email notifications and the ability to reset passwords would be simple and quick.
 
-* Having the ability to connect your account to Social media would also allow the users to more easily share recipes with their friends and followers
+* Having the ability to connect your account to Social media would also allow the users to more easily share recipes with their friends and followers.
 
 *   Navigation links change colour when you hover over them, but they do not show which is the active link as certain views didn't have a URL name to style. This would have meant there would need to be a custom javascript solution with event listeners which unfortunately there wasn't time to complete.
 
